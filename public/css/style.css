@@ -1,10 +1,9 @@
-
-//styles h1 color red
-h1{
-    color: red;
+/* styles h1 color red */
+h1 {
+  color: red;
 }
-//anything with class complete will be gray with a strike through
-.completed{
-    color: gray;
-    text-decoration: line-through;
+/* anything with class complete will be gray with a strike through */
+.completed {
+  color: gray;
+  text-decoration: line-through;
 }
