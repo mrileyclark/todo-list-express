@@ -59,7 +59,7 @@ app.get("/", async (request, response) => {
   //.catch(error => console.error(error))
 });
 
-//starts POST method when add route is passed in
+//starts POST method when add route is passed in--comes from form
 app.post("/addTodo", (request, response) => {
   //inserts a new item into todos collection, gives it a completed value of false
   //by default
@@ -78,7 +78,7 @@ app.post("/addTodo", (request, response) => {
 
 //starts PUT method when markComplete route is passed in
 app.put("/markComplete", (request, response) => {
-  //looks at todos collection for one item matching name of item passed in from main.js that was clicked on
+  //looks at todos collection for one item matching task name of item passed in from main.js that was clicked on
   db.collection("todos")
     .updateOne(
       { thing: request.body.itemFromJS },
